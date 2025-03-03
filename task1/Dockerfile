@@ -1,6 +1,5 @@
 # Используем базовый образ Node.js версии 16 на Alpine Linux
-# FROM node:16-alpine
-FROM node:16-alpine@sha256:365ccd918307819be03cceb6ba46fa5cd708bfa5448e27a491401c18bdea8312
+FROM node:16-alpine
 
 # Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /usr/src/app
