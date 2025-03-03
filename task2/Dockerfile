@@ -6,5 +6,5 @@ WORKDIR /home/ilovedocker/app
 # Копируем скрипт hello.sh в рабочую директорию
 COPY hello.sh .
 
-# Устанавливаем команду запуска (неизменяемую)
-CMD ["sh", "hello.sh"]
+# Делаем hello.sh неизменяемой командой запуска
+ENTRYPOINT ["sh", "hello.sh"]
